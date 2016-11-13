@@ -1,113 +1,77 @@
+.default-class h1,
+.default-class h2,
+.default-class h3,
+.default-class h4,
+.default-class h5 {
+  padding: 0;
+  margin: 0;
+}
+.default-class h1 {
+  font-size: 90px;
+}
 .container {
-  width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.my-carousel h1 {
-  font-size: 50px;
-  color: #354D62;
+  width: 1200px;
+  paddin: 0 15px;
   text-align: center;
-  color: #64868E;
-  padding-top: 30px;
 }
-.my-carousel .carousel-indicators {
-  top: 0px;
-  width: 100%;
-  z-index: 1;
-  position: static;
-  margin-left: 0%;
+.welcome {
+  background-image: url('../assets/still-nyc-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
 }
-.my-carousel .carousel-indicators.carousel-indicators--img li {
-  width: 110px;
-  height: 40px;
-  margin: 20px;
-  border: none;
-  border-radius: 0;
-}
-.my-carousel .carousel-indicators li {
-  text-indent: 0;
-}
-.my-carousel .thumbnail {
-  background-color: transparent;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  width: 145px;
-}
-.my-carousel .thumbnail svg {
-  width: 80px;
+.welcome #video-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
   height: auto;
 }
-.my-carousel .thumbnail .svg-icon2 {
-  width: 100px;
+@media (min-width: 320px) and (max-width: 768px) {
+  .welcome #video-background {
+    display: none;
+  }
 }
-.my-carousel .thumbnail p {
-  color: #354D62;
+.welcome .kevin {
+  position: absolute;
+  top: 30%;
   text-align: center;
-  font-size: 16px;
+  width: 100%;
+  color: #fff;
 }
-.my-carousel .thumbnail .cls-1 {
-  fill: #354D62;
+.welcome .kevin h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
 }
-.my-carousel .svg-icon {
-  height: 90px;
+@media (min-width: 320px) and (max-width: 768px) {
+  .welcome .kevin h1 {
+    font-size: 60px;
+  }
 }
-.my-carousel .carousel-indicators .active {
-  background-color: transparent;
-}
-.my-carousel .carousel-indicators.carousel-indicators--img .active .thumbnail .cls-1 {
-  fill: #64868E;
-}
-.my-carousel .carousel-indicators.carousel-indicators--img .active .thumbnail p {
-  color: #64868E;
-}
-.my-carousel .small-captions {
-  padding-bottom: 20px;
-  text-align: center;
-}
-.my-carousel .small-captions p {
-  font-size: 13px;
-}
-.my-carousel .carousel-caption {
-  text-shadow: none;
-  position: static;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
-}
-.my-carousel .carousel-caption h3 {
-  color: #64868E;
+.welcome .kevin h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   font-size: 30px;
 }
-.my-carousel .carousel-caption p {
-  color: #354D62;
-  font-size: 16px;
+@media (min-width: 320px) and (max-width: 768px) {
+  .welcome .kevin h2 {
+    font-size: 25px;
+  }
 }
-.my-carousel .carousel-caption h5 {
-  color: #354D62;
+.experience {
+  background-image: url('../assets/aboutme-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
 }
-.my-carousel .mobile-benefits {
-  text-align: center;
-}
-.my-carousel .mobile-benefits .benefit-sections {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.my-carousel .mobile-benefits .benefit-icons {
-  width: 90px;
-  padding-bottom: 10px;
-}
-.my-carousel .mobile-benefits h4 {
-  color: #64868E;
-  font-size: 18px;
-}
-.my-carousel .mobile-benefits p {
-  font-size: 16px;
-}
-.my-carousel .mobile-benefits a {
+.experience h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   text-transform: uppercase;
-  color: #718CA1;
+  color: #fff;
 }
