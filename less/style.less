@@ -1,137 +1,59 @@
-//===========
-// Variables
-//===========
+@import "variables.less";
+@import "default-class.less";
 
-@primary: #718CA1;
-@secondary: #354D62;
-@grey: #64868E;
+.welcome {
+  background-image: url('../assets/still-nyc-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+  height: 100vh;
 
-.container {
-    width: 1170px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+
+  #video-background {
+    // position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  .Kevin {
+    position: absolute;
+    top: 30%;
+  	text-align: center;
+    width: 100%;
+  	color: @primary;
+
+      h1 {
+        font-family: @primaryFont;
+        font-weight: @primayFontWeight;
+        text-transform: uppercase;
+        @media @mobile {
+          font-size: 60px;
+        }
+      }
+      h2 {
+        font-family: @primaryFont;
+        font-weight: @primayFontWeight;
+        font-size: 30px;
+        @media @mobile {
+          font-size: 25px;
+        }
+      }
+
+  }
 }
 
-.my-carousel {
-  h1 {
-    font-size: 50px;
-    color: @secondary;
-    text-align: center;
-    color: @grey;
-    padding-top: 30px;
-  }
-  .carousel-indicators {
-    top: 0px;
-    width: 100%;
-    z-index: 1;
-    position: static;
-    margin-left: 0%;
-  }
-  .carousel-indicators.carousel-indicators--img li {
-    width: 110px;
-    height: 40px;
-    margin: 20px;
-    border: none;
-    border-radius: 0;
-  }
-  .carousel-indicators li {
-    text-indent: 0;
-  }
-  .thumbnail {
-    background-color: transparent;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    width: 145px;
-    svg {
-      width: 80px;
-      height: auto;
-    }
-    .svg-icon2 {
-      width: 100px;
-    }
-    p {
-      color: @secondary;
-      text-align: center;
-      font-size: 16px;
-    }
-    .cls-1 {
-        fill: @secondary;
-    }
-  }
-  .svg-icon {
-    height: 90px;
-  }
-  .carousel-indicators .active {
-    background-color: transparent;
-  }
-  .carousel-indicators.carousel-indicators--img .active .thumbnail .cls-1 {
-    fill: @grey;
-  }
-  .carousel-indicators.carousel-indicators--img .active .thumbnail p {
-    color: @grey;
-  }
-  .small-captions {
-    padding-bottom: 20px;
-    text-align: center;
-    p {
-        font-size: 13px;
-    }
-  }
-  // .carousel-control {
-  //   color: @secondary;
-  //   opacity: 1;
-  //   text-shadow: none;
-  //   top: 60%;
-  //   display: flex;
-  //   display: -ms-flexbox;
-  //   -webkit-box-align: center;
-  //   // align-items: center;
-  //   -ms-flex-align: center;
-  //   justify-content: space-around;
-  // }
-  .carousel-caption {
-    text-shadow: none;
-    position: static;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
-    h3 {
-      color: @grey;
-      font-size: 30px;
-    }
-    p {
-      color: @secondary;
-      font-size: 16px;
-      }
-    h5 {
-      color: @secondary;
-    }
-  }
-// MOBILE BENEFIT SECTION
-  .mobile-benefits {
-    text-align: center;
-    .benefit-sections {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-    .benefit-icons {
-      width: 90px;
-      padding-bottom: 10px;
-    }
-    h4 {
-      color: @grey;
-      font-size: 18px;
-    }
-    p {
-        font-size: 16px;
-    }
-    a {
-      text-transform: uppercase;
-      color: @primary;
-    }
-  }
+.experience {
+  background-image: url('../assets/still-ny-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100%;
 }
