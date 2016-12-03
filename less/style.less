@@ -280,16 +280,20 @@ body > .navbar-collapse a {
 
 .info-icon {
   text-align: center;
-}
-.info-icon .icon {
-  font-size: 62px;
-  line-height: 66px;
-  color: #c5a47e;
-  margin-bottom: 10px;
-}
-.info-icon .description {
-  margin-top: 15px;
-  color: #777777;
+  @media @mobile {
+    margin-bottom: 30px;
+  }
+  .icon {
+    font-size: 62px;
+    line-height: 66px;
+    color: #c5a47e;
+    margin-bottom: 10px;
+  }
+  .description{
+    margin-top: 15px;
+    color: #777777;
+    margin: 10px auto;
+  }
 }
 
 .avatar {
