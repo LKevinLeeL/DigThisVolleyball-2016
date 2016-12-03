@@ -116,7 +116,6 @@ gaia = {
                      setTimeout(function(){
                         $toggle.removeClass('toggled');
                      }, 550);
-
                 } else {
                     setTimeout(function(){
                         $toggle.addClass('toggled');
