@@ -6,6 +6,6 @@ $('nav li a').click(function(event) {
     $('html, body').animate({
         scrollTop: target
     }, 1000);
-    $('html, body').removeClass('nav-open');
+    $('html').removeClass('nav-open');
     event.preventDefault();
 });
