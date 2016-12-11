@@ -2339,9 +2339,11 @@ a,
 
 .people-testimonials {
   .description {
-    font-style: italic;
-    width: 360px;
     margin: 0 auto;
+    font-style: italic;
+    min-width: 290px;
+    margin: 0 auto;
+    max-width: 380px;
   }
   .fa {
     margin: 0 10px 0 10px;
@@ -3500,5 +3502,17 @@ body {
   }
   .title-area {
     margin: 0 auto 20px;
+  }
+}
+
+#ig-feed{
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    @media @mobile {
+
+    }
   }
 }
