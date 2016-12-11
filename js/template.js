@@ -133,6 +133,7 @@ gaia = {
 
                     $('html').addClass('nav-open');
                     gaia.misc.navbar_menu_visible = 1;
+                    
 
                 }
             });
