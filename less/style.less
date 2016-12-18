@@ -3443,11 +3443,34 @@ body {
 }
 
 #ig-feed {
+  font-family: "Roboto", "Helvetica Neue", serif;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    // margin-bottom: 15px;
+  }
   .caption {
-    // position: absolute;
+    margin-bottom: 15px;
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #777777;
   }
   .likes {
-    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    .display(flex);
+    .justify-content(center);
+    .align-items(center);
+
+    @media @mobile {
+      padding-bottom: 10px;
+    }
+
+    .fa-heart {
+      color: @likes;
+    }
   }
 }
 
@@ -3460,17 +3483,5 @@ body {
   }
   .title-area {
     margin: 0 auto 20px;
-  }
-}
-
-#ig-feed{
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    @media @mobile {
-
-    }
   }
 }
