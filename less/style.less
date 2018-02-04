@@ -3446,7 +3446,7 @@ body {
   font-family: "Roboto", "Helvetica Neue", serif;
   img {
     width: 100%;
-    height: auto;
+    height: 360px;
     border-radius: 6px;
     margin-bottom: 15px;
     box-shadow:
@@ -3458,6 +3458,9 @@ body {
   -o-transition: all 100ms cubic-bezier(.34, 1.61, .7, 1);
   -ms-transition: all 100ms cubic-bezier(.34, 1.61, .7, 1);
   transition: all 100ms cubic-bezier(.34, 1.61, .7, 1);
+  @media @mobile {
+    height: auto;
+  }
   }
   img:hover {
     -webkit-transform: scale(1.03);
@@ -3472,6 +3475,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     color: #777777;
+    display: none;
   }
   .likes {
     font-size: 16px;
@@ -3479,6 +3483,7 @@ body {
     .display(flex);
     .justify-content(center);
     .align-items(center);
+    display: none;
 
     @media @mobile {
       padding-bottom: 10px;
